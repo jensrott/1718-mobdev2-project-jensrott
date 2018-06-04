@@ -1,0 +1,61 @@
+@import '../../../_sass/abstracts/variables';
+@import '../../../_sass/abstracts/helpers';
+@import '../../../_sass/abstracts/mixins';
+
+$footer-padding: 8px;
+
+.footer {
+    background-color: map-get($mainswatch, color-5);
+    border-top: 1px solid hsla(0,0%,100%,.25);
+    margin: 0;
+    padding: 0;
+
+    .links_contact {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .links_social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .icon {
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    li {
+        a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: $footer-padding;
+            color: #fff;
+        
+            &:hover {
+            
+                text-decoration: none;
+                color: map-get($mainswatch , color-1);
+            }
+            
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+

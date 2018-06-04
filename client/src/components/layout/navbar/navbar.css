@@ -1,0 +1,161 @@
+/* The swatches I will use */
+/* Base styles */
+/* Header styles */
+/* The swatches I will use */
+/* Base styles */
+/* Header styles */
+.border-line {
+  border-bottom: 2px solid #707070;
+  margin-bottom: 10px; }
+
+.card {
+  background-color: #FBFBFB;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.main-button {
+  color: #fff;
+  background-color: #FBAD18;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: 0;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; }
+  .main-button:hover {
+    transform: scale(1.035); }
+    .main-button:hover a {
+      text-decoration: none; }
+  .main-button:active {
+    transform: scale(0.95); }
+
+/* Margins */
+.margin-helper {
+  margin: 10px 0; }
+
+/* Text */
+.text-center {
+  text-align: center; }
+
+/* Center */
+.center-items {
+  display: flex;
+  justify-content: center; }
+
+.lead-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: #555555; }
+
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: #555555; }
+
+/* Image */
+.rounded-circle {
+  border-radius: 50%; }
+
+/* Forms */
+.form-input {
+  border-radius: 3px;
+  border: 0.5px solid #000;
+  width: 100%;
+  height: 40px; }
+
+/*  */
+/* Screen sizes depending on bootstrap grid */
+/* TODO MAKE IT RESPONSIVE!! */
+.header {
+  background-color: #FBAD18;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  /* position: fixed; text is gone */ }
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem; }
+  .nav-container .open-sidenav {
+    display: none; }
+  .nav-container .nav-left {
+    display: flex;
+    margin-right: auto;
+    /*
+        &__logo {     
+           background: url('../../../../assets/images/placeholder.jpg') no-repeat center center;
+        }
+        */ }
+  .nav-container .nav-right {
+    display: flex;
+    margin-left: auto; }
+  .nav-container li {
+    list-style: none;
+    display: flex;
+    margin: 20px; }
+    .nav-container li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600; }
+      .nav-container li a:hover {
+        text-decoration: none;
+        color: #000000; }
+      .nav-container li a:focus {
+        color: #555555; }
+
+/* Side nav that goes out from the left side */
+.side-nav {
+  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px; }
+  .side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s; }
+
+@media all and (max-width: 890px) {
+  .header .container {
+    /* Hamburger menu now shows */ }
+    .header .container .open-sidenav {
+      display: block; }
+    .header .container .nav-container li {
+      display: none; }
+      .header .container .nav-container li .nav-left {
+        float: none; }
+  .header .side-nav {
+    display: none; } }

@@ -1,0 +1,83 @@
+@import '../../../_sass/abstracts/helpers'; // main button is in here
+@import '../../../_sass/abstracts/variables';
+
+img {
+    width: 100%;
+}
+  
+  .landing {
+    position: relative;
+    background: url('../../../assets/img/cycling_wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .landing-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-form {
+    opacity: 0.9;
+  }
+  
+  .latest-profiles-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb;
+  }
+
+  .signup-button {
+    margin: 10px;
+    padding: 20px;
+    background-color: map-get($mainswatch , color-5); 
+
+    &:hover {
+      background-color: map-get($mainswatch , color-6);
+      color: map-get($mainswatch , color-5);
+    }
+}
+
+.login-button {
+    margin: 10px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    background-color: map-get($mainswatch , color-6);
+
+    &:hover {
+      background-color: map-get($mainswatch , color-5);
+      color: map-get($mainswatch , color-6);
+    }
+}
+
+.lead-title-landing {
+  font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.lead-text-landing {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 45px;
+    color: #fff;
+}
+  

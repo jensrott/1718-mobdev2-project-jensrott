@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@function color-palette($palette: 'default', $tone: 'base', $palettes: $color-palettes) {
+  @return map-get(map-get($palettes, $palette), $tone);
+};

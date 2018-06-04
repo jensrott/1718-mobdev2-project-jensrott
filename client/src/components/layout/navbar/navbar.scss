@@ -1,0 +1,133 @@
+@import '../../../_sass/abstracts/variables';
+@import '../../../_sass/abstracts/helpers';
+@import '../../../_sass/abstracts/mixins';
+/* TODO MAKE IT RESPONSIVE!! */
+
+.header {
+    background-color: map-get($mainswatch , color-5);
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    border-bottom: 1px solid hsla(0,0%,100%,.25);
+    /* position: fixed; text is gone */
+
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+
+    .open-sidenav {
+        display: none;
+    }
+
+    
+   
+    .nav-left {
+        display: flex;
+        margin-right: auto;
+        /*
+        &__logo {     
+           background: url('../../../../assets/images/placeholder.jpg') no-repeat center center;
+        }
+        */
+    }
+
+    .nav-right {
+        display: flex;
+        margin-left: auto;
+
+
+
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        margin: 20px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff; 
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+                color: #000000;
+            }
+
+            &:focus {
+                color: #555555;
+            }
+            
+        }
+    }
+}
+
+/* Side nav that goes out from the left side */
+.side-nav {
+    display: none;
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+
+    .btn-close {
+        position:absolute;
+        top:0;
+        right:22px;
+        font-size:36px;
+        margin-left:50px;
+    }
+
+    a {
+        padding:10px 10px 10px 30px;
+        text-decoration:none;
+        font-size:22px;
+        color:#ccc;
+        display:block;
+        transition:0.3s;
+    }
+}
+
+@media all and (max-width: 890px) {
+
+    .header {
+        .container {
+            /* Hamburger menu now shows */
+            .open-sidenav {
+                display: block;
+            }
+            .nav-container {
+
+                li {
+                    display: none;
+
+                    .nav-left {
+                        float: none;
+                    }
+                }
+            }
+        }
+
+        .side-nav {
+            display: none;
+        }
+    }
+  
+    
+  }

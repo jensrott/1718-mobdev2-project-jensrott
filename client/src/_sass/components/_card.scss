@@ -1,0 +1,117 @@
+@import '../abstracts/variables';
+
+$card-background-color:map-get($mainswatch , color-7);
+$card-background-boxshadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+$card-padding: 10px;
+$card-bid-color: map-get($mainswatch, color-5);
+$card-hide-color: map-get($mainswatch, color-6);
+$card-text-color: #fff;
+$card-border-radius: 15px;
+
+$button-border-radius: 15px;
+$button-border: 1px solid #000;
+
+.cards-container {
+    margin-top: 50px;
+    .card {
+        background-color: $card-background-color;
+        box-shadow: $card-background-boxshadow;
+        padding: $card-padding;
+        border-radius: $card-border-radius;
+        margin-bottom: 10px;
+
+        h1,h2 {
+            margin: 0;
+        }
+
+        .main-title {
+            display: flex;
+            margin: 0;
+
+        
+            &__price {
+                display: flex;
+                margin-left: auto;
+            }
+        }
+
+        .sub-title {
+            display: flex;
+            &__remaining-time {
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                font-weight: lighter;
+                font-size: $base-font-size;
+                font-family: $base-font-family;
+            }
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: nowrap;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                
+                
+
+                .button-bid {
+                    background-color: $card-bid-color;
+                    width: 100px;
+                    height: auto;
+                    border-radius: $button-border-radius;
+                    text-transform: uppercase;
+                    border: 0;
+                    color: $card-text-color;
+                    padding: 7px;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+
+                    &:hover {
+                        transform: scale(1.035);
+                        background-color: $card-bid-color;
+                      }
+                      
+                      &:active {
+                        transform: scale(.95);
+                      }
+                }
+
+                .button-hide {
+                    background-color: $card-hide-color;
+                    width: 100px;
+                    height: auto;
+                    border-radius: $button-border-radius;
+                    text-transform: uppercase;
+                    border: 0;
+                    color: $card-text-color;
+                    padding: 7px;
+                    font-weight: 400;
+
+                    &:hover {
+                        transform: scale(1.035);
+                        background-color: $card-hide-color;
+                      }
+                      
+                      &:active {
+                        transform: scale(.95);
+                      }
+                } 
+            }
+        }
+    }
+}
+

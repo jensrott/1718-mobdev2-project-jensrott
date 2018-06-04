@@ -1,0 +1,38 @@
+/* The swatches I will use */
+$mainswatch : (
+  bg: #e6e6d8,
+  color-1 : #000, //#00a99d
+  color-2: #697170,
+  color-3: #005C56,
+  color-4: #A93800,
+  color-5: #FBAD18,
+  color-6: #7B550C,
+  color-7: #FBFBFB,
+);
+
+/* Base styles */
+$ms00: 1 !default;
+
+$base-margin: 16px;
+$base-padding: 1.5rem;
+
+$primary-font-family: 'Open Sans', sans-serif; // Title
+$base-font-family: 'Roboto', sans-serif; // Text 
+$secondary-font-family: $base-font-family;
+$sans-serif-font-family: sans-serif;
+$serif-font-family: serif;
+
+$base-font-size: #{$ms00 * 16}px !default;
+$headone-font-size: 3.25rem; // 52px
+$base-line-height: 1.5;
+$base-border-radius: 3px;
+
+$body-background-color: map-get($mainswatch, bg);
+$base-color: #444;
+
+
+/* Header styles */
+$header-background-color: #fff;
+$header-border-bottom: 0.5px solid #697170; 
+$headings-line-height: 1.5;
+

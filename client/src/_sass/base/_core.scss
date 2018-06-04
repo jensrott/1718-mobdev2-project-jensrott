@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+@import '../abstracts/variables';
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: $body-background-color;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    line-height: $headings-line-height;
+}
+
+h1 {
+    font-family: $primary-font-family;
+    color: map-get($mainswatch , color-2);
+    font-size: $headone-font-size; 
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: $base-font-family;
+    color: map-get($mainswatch , color-2); 
+}
+
+p {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+}
+
+a {
+    font-family: $base-font-family;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+
