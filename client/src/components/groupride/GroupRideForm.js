@@ -79,7 +79,6 @@ class GroupRideForm extends Component {
               <p className="lead text-center">
                 Create a group ride, because riding together is fun!
               </p>
-              <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
                   placeholder="* Name"
@@ -167,7 +166,7 @@ class GroupRideForm extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4"
+                  className="main-button mt-2"
                 />
                 <ProfileMaps start={this.state.from_route} end={this.state.to_route} /> {/*  Doesn't work yet when from form */}
               </form>

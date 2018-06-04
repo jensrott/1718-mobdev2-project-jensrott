@@ -11,14 +11,14 @@ const postsController = require('./controllers/postsController');
 router.post("/posts", passport.authenticate('jwt', { session: false }), postsController.create_post);
 router.get("/posts",  postsController.get_all_posts);
 router.get("/posts/:id",  postsController.get_post_by_id);
-router.delete("/posts/:id", postsController.delete_post_by_id);
 router.patch("/posts/:id/softdelete",  passport.authenticate('jwt', { session: false }), postsController.soft_delete_post_by_id);
 router.patch("/posts/:id/softundelete",  passport.authenticate('jwt', { session: false }), postsController.soft_undelete_post_by_id);
 router.put("/posts/:id/edit",passport.authenticate('jwt', { session: false }), postsController.edit_post_by_id);
-router.post("posts/like/:id", passport.authenticate('jwt', { session: false }), postsController.like_post_by_id);
-router.post("posts/unlike/:id", passport.authenticate('jwt', { session: false }), postsController.unlike_post_by_id);
+router.post("/posts/like/:id", passport.authenticate('jwt', { session: false }), postsController.like_post_by_id);
+router.post("/posts/unlike/:id", passport.authenticate('jwt', { session: false }), postsController.unlike_post_by_id);
 router.post("/posts/comment/:id", passport.authenticate('jwt', { session: false }), postsController.comment_post_by_id);
 router.delete("/posts/comment/:id/:comment_id", passport.authenticate('jwt', { session: false }), postsController.remove_comment_by_id);
+router.delete("/posts/:id",passport.authenticate('jwt', { session: false }), postsController.delete_post_by_id);
 
 
 /* Profile Controller */
