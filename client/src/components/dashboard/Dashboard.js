@@ -38,9 +38,11 @@ class Dashboard extends Component {
             <div>
               <GroupRideItem groupride={profile.groupride} />
             </div>
+            {/* 
             <div className="card">
               <Friends friends={profile.friends} />
             </div>
+            */}
 
             <button
               onClick={this.onDeleteClick.bind(this)}
@@ -58,7 +60,7 @@ class Dashboard extends Component {
             <p className="lead-text">
               You have not yet setup a profile, please add some info
             </p>
-            <Link to="/create-profile" className="btn btn-lg btn-info">
+            <Link to="/create-profile" className="main-button" style={{padding: '5px'}}>
               Create Profile
             </Link>
           </div>

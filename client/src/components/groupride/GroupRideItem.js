@@ -57,7 +57,7 @@ class GroupRideItem extends Component {
               className="main-button btn-block btn-group-sm"
             >
               <Link to={`/groupride/${grp._id}`}>
-                View Profile
+                View Groupride
               </Link>
             </button>
           </div>
