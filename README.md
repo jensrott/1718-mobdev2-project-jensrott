@@ -15,3 +15,5 @@ A social network for cyclist who love riding in group and socialize.
     PS> npm run c-start-dev -> This will start the server and client app
     Don't forget to add your own keys to start all the services.
 ```
+### TODO
+App is not full finished (currently WIP)
